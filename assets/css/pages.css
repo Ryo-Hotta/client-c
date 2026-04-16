@@ -343,19 +343,57 @@
 }
 
 /* --- Responsive --- */
-@media (max-width: 768px) {
-  .page-hero { padding: 120px 0 60px; }
-  .page-hero-title { font-size: 3.2rem; }
 
+/* Tablet (601px〜1024px) */
+@media (max-width: 1024px) {
+  .page-hero { padding: 140px 0 72px; }
+  .page-hero-title { font-size: 4.0rem; }
+
+  .about-philosophy { gap: 48px; }
+  .about-message { gap: 40px; }
+
+  .product-detail { gap: 48px; }
+
+  .howto-steps { gap: 32px; }
+
+  .contact-methods { gap: 40px; }
+  .contact-card { padding: 40px 32px; }
+
+  .company-table th { width: 140px; }
+}
+
+/* Tablet Portrait / 大きめスマホ (601px〜768px) */
+@media (max-width: 768px) {
   .about-philosophy { grid-template-columns: 1fr; gap: 40px; }
   .about-message { grid-template-columns: 1fr; gap: 32px; }
-  .about-heading { font-size: 1.8rem; }
 
   .product-detail { grid-template-columns: 1fr; gap: 40px; }
-  .product-detail-name { font-size: 2.0rem; }
 
-  .howto-steps { grid-template-columns: 1fr; gap: 48px; }
+  .howto-steps { grid-template-columns: 1fr; gap: 40px; }
 
   .contact-methods { grid-template-columns: 1fr; gap: 32px; }
-  .contact-card { padding: 32px 24px; }
+}
+
+/* Mobile (600px以下) */
+@media (max-width: 600px) {
+  .page-hero { padding: 110px 0 52px; }
+  .page-hero-title { font-size: 3.0rem; }
+
+  .about-heading { font-size: 1.8rem; }
+
+  .product-detail-name { font-size: 2.0rem; }
+  .product-thumbnails { gap: 8px; }
+  .product-thumb { width: 60px; height: 60px; }
+  .feature-label { width: 100px; }
+
+  .howto-steps { gap: 40px; }
+  .howto-number { font-size: 3.0rem; }
+  .howto-title { font-size: 1.4rem; }
+
+  .contact-card { padding: 28px 20px; }
+  .form-placeholder { padding: 48px 20px; }
+
+  .company-table th { width: 100px; }
+  .company-table th,
+  .company-table td { padding: 16px 12px; font-size: 1.3rem; }
 }
